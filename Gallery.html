@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="icon" href="images/star.png">
+
+    <title>Hotel Gallery</title>
+</head>
+<body style="text-align: center;">
+    
+
+    <nav>
+        <ul>
+        <li><a href="index.html" target="_blank"> Home</a></li>
+        <li><a href="#Rooms"> Rooms</a></li>
+        <li><a href="#Facitilities">Facilities</a></li>
+        <li><a href="Gallery.html" target="_blank"> Gallery</a></li>
+        <li><a href="#Reservation_Form_1"> Book</a></li>
+        <li><a href="" target="_blank">Contact us</a></li>
+        <li><a href="" target="_blank">About us</a></li>
+        <li><a href="Calculator.html" target="_blank">JS Calculator</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br> <br>
+
+    <img src="/images/gallery01.jpg" alt="" id="Ad">
+    <hr>
+    <h1>Gallery</h1>
+    <img src="images/gallery01.jpg" alt="Damn" id="big">
+    <div style="display: flex;">
+        <img src="images/gallery01.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery02.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery03.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery04.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery05.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery06.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery07.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery08.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery09.jpg" width="10%" onclick="gallery(this.src);">
+        <img src="images/gallery10.jpg" width="10%" onclick="gallery(this.src);">
+       
+    </div>
+
+    <script> 
+    var n=Math.ceil(Math.random()*10);
+    n=(n<10)?'0'+n:n;
+    var pic='images/gallery'+n+'.jpg';
+    document.getElementById('Ad').src=pic;
+        function gallery(New_Pic){
+            document.getElementById('big').src=New_Pic;
+        }
+    </script>
+</body>
+</html>
